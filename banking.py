@@ -16,7 +16,7 @@ class Bank:
             print(f"Error: Account {account_id} already exists.")
             return
             #check if account id is a positive integer
-        if not isinstance(account_id, int) or account_id <= 0:
+        if int(account_id) <= 0:
             print("Error: Account ID must be a positive integer.")
             return
             #create account with an empty history and balance of 0
